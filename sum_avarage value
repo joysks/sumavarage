@@ -1,0 +1,48 @@
+
+import java.util.Scanner;
+
+ class sumava{
+    public static void main(String [] args){
+Scanner input=new Scanner(System.in);
+
+System.out.println( "Input the sze of array");
+int size=input.nextInt();
+
+
+   int [] Number=new int [size];
+
+
+   System.out.println("Input the array element: ");
+   for(int i= 0;i<size;i++){
+    // numbers[i] = input.nextInt();
+    Number[i]=input.nextInt();
+
+   //int []Number=input.nextInt();
+
+
+   }
+
+
+
+   int sum=0;
+   double Average;
+
+for (int number:Number){
+
+sum+=number;
+
+}
+
+int lenth=Number.length;
+
+Average=( (double)sum/(double) lenth);
+
+
+System.out.println("The sum of number is: "+sum);
+System.out.println("The avararage of number is: "+Average);
+
+
+
+    }
+
+}
